@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:layout_margin="8dp"
+
+    >
+    <ImageView
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+        android:id="@+id/item_img_"
+        android:src="@drawable/timg1"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="6dp"
+
+        >
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+        <TextView
+
+            android:maxLines="2"
+            android:layout_marginBottom="5dp"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:textColor="#000000"
+            android:id="@+id/item_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title" />
+        <TextView
+            android:maxLines="2"
+            android:textSize="13sp"
+            android:textColor="#d4393c"
+            android:id="@+id/item_tv_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="抖音同款" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            >
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_tv_shop_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:text="淘宝价 ￥40"
+                android:textColor="#a39e9e"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/item_tv_shop_monthsale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:maxLines="1"
+                android:text="月销量"
+                android:textColor="#a39e9e"
+                android:textSize="13sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@mipmap/page_sc_gapprice"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+            <TextView
+                android:maxLines="1"
+                android:textSize="17sp"
+                android:textColor="#e9070f"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/item_tv_shop_dealprice"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="￥22.5" />
+            <TextView
+                android:layout_marginRight="10dp"
+                android:id="@+id/txtMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:text="15元券"
+                android:textStyle="normal"
+                android:background="@mipmap/bg_coupon_sc_vh_price"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

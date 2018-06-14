@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/pagertab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <!--填充整个页面的ViewPager，viewpager就是用来侧滑的,本页面不能复用，如果两个fragment都要用到viewpager的话就建立两个这样的页面-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

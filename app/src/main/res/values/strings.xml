@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LcShop</string>
+    <string name="title">绯色薄款丝袜邮乐购</string>
+    <string name="des">抖音同款</string>
+    <string name="shop_price"> ￥ 22.5</string>
+    <string name="shop_monthsale">月销量</string>
+</resources>

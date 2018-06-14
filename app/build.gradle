@@ -1,0 +1,66 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.luanchuan.lcshop"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    //retrofit2  HTTP客户端封装内容
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    //RxJava 模块，用来设置观察者模式
+    compile 'io.reactivex:rxjava:1.1.0'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    //底部导航栏加载模块
+    compile 'com.ashokvarma.android:bottom-navigation-bar:1.2.0'
+
+    compile 'com.zhy:base-adapter:3.0.3'    //万能适配器仅针对Listview
+
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-6'   //智能刷新库目前最新版
+
+    compile 'com.squareup.okio:okio:1.8.0';     //  okhttp插件
+    compile 'com.squareup.okhttp3:okhttp:3.7.0';//  okhttp插件
+
+    //glide
+    compile 'com.android.support:support-v4:26.0.0-alpha1'
+    compile 'com.github.bumptech.glide:glide:4.0.0-RC1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.0.0-RC1'
+
+    compile 'com.bigkoo:convenientbanner:2.0.5'  //首页大图轮播加载组件
+    compile 'com.github.userswlwork:pull-to-refresh:1.0.0'
+
+    compile 'com.jakewharton:butterknife:7.0.1'
+    annotationProcessor 'com.jakewharton:butterknife:7.0.1'
+
+    //加载图示
+    compile 'com.kaopiz:kprogresshud:1.0.1'
+
+    //万能recyeler适配器
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+     //页面切换加载的组件地址：https://github.com/81813780/AVLoadingIndicatorView
+    compile 'com.wang.avi:library:2.1.3'
+//下拉加载框架。。已经是第4个了
+    compile 'com.wuxiaolong.pullloadmorerecyclerview:library:1.1.2'
+
+
+}
