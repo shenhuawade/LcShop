@@ -20,7 +20,7 @@ import com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView;
 import java.util.ArrayList;
 import java.util.Map;
 import rx.Subscriber;
-/**
+/**111111
  * Created by good on 2018/5/31.
  * 继承BaseFragment
  * init方法：初始化布局
@@ -151,6 +151,7 @@ public class RecyclerTemplateFragment extends BaseFragment{
                 mPullLoadMoreRecyclerView.setPullLoadMoreCompleted();   //下拉控件加载完成
                 mAdapter.notifyDataSetChanged();//调用适配器模块//goodlistview1列表里边显示适配的数据
 //                Toast.makeText(getContext(), "已经加载最新n", Toast.LENGTH_SHORT).show();
+
 
             }
         };
